@@ -143,7 +143,7 @@ module GoogleSpreadsheet
         def spreadsheet_by_url(url)
           # Tries to parse it as URL of human-readable spreadsheet.
           uri = URI.parse(url)
-          if uri.host == "spreadsheets.google.com" && uri.path =~ /\/ccc$/
+          if uri.host == "docs.google.com" && uri.path =~ /\/ccc$/
             if (uri.query || "").split(/&/).find(){ |s| s=~ /^key=(.*)$/ }
               return spreadsheet_by_key($1)
             end
