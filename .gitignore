@@ -1,0 +1,7 @@
+experiment
+doc
+test/account.yaml
+*~
+*.gem
+.rvmrc
+Gemfile.lock
